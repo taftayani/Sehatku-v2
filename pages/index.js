@@ -3,6 +3,7 @@ import Head from '../components/Input/Header'
 import Header from '../components/Content/HeaderFirst'
 import First from '../components/Homepage/FirstSection'
 import FirstLayout from '../components/Homepage/FirstLayout'
+import Footer from '../components/Content/FooterFirst'
 class Beranda extends React.Component{
     render(){
         return(
@@ -15,7 +16,8 @@ class Beranda extends React.Component{
                 </div>
                 <First/>
                 <FirstLayout/>
-                <style jsx>{
+                <Footer/>
+                <style jsx global>{
                    `
                    .first-bg-layout{
                        padding-top: 40px;
@@ -36,8 +38,10 @@ class Beranda extends React.Component{
                     .navbar-bg{
                         position:fixed;
                         background: white;
+                        padding-top:10px;
+                        padding-bottom:10px;
                         z-index:2;
-                        box-shadow:0px 3px 6px 2px grey;
+                        box-shadow:0px 3px 6px 2px 	#F8F8F8;
                     }
                     .first-bg{
                         background: #E8E8E8;
