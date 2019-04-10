@@ -2,7 +2,7 @@
   "name": "Sehatku",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "webpack",
     "start": "node index.js"
   },
   "engines": {
