@@ -1,14 +1,5 @@
 import React from 'react'
 export default class FirstLayout extends React.Component{
-    
-    componentDidMount(){
-        // var card=document.getElementById('card-article-loop');
-        // var i;
-        // for(i=0;i<;i++){
-        //     card += card[i];
-        // }
-        // document.getElementById('card-article-loop').innerHTML=card;
-    }
     render(){
         return(
             <div>
