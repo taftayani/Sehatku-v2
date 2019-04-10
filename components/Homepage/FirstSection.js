@@ -1,20 +1,35 @@
-import React, { Component } from 'react';
-import Head from '../components/Input/Header'
-import Header from '../components/Content/HeaderFirst'
-import First from '../components/Homepage/FirstSection'
-import FirstLayout from '../components/Homepage/FirstLayout'
-class Beranda extends React.Component{
+import React from 'react'
+
+export default class FirstSection extends React.Component{
     render(){
         return(
             <div>
-                <Head/>
-                <div className="container-fluid navbar-bg">
+                <div className="container-fluid first-bg">
                     <div className="container">
-                        <Header/>
-                    </div>
+                        <div className="row">
+                            <div className="col-xl-8">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <h1 className="heading-first">Sehatku Adalah Sebuah Aplikasi Kesehatan Sebagai Alat
+                                            Konsultasi dengan Dokter Yang anda Inginkan
+                                        </h1>
+                                    </div>
+                                    <div className="col-12 ">
+                                        <div className="img-heading-first">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-4">
+                                <div className="img-heading-second">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                <First/>
-                <FirstLayout/>
                 <style jsx>{
                    `
                    .first-bg-layout{
@@ -65,8 +80,6 @@ class Beranda extends React.Component{
                 }
             </style>
             </div>
-           
         )
     }
 }
-export default Beranda;
