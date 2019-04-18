@@ -1,9 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 export default class FirstLayout extends React.Component{
     render(){
         return(
             <div>
-                <div className="container-fluid first-bg-layout">
                     <div className="container" >
                         <div className="row">
                             <label className="label-article">Artikel Terbaru</label>
@@ -124,32 +124,9 @@ export default class FirstLayout extends React.Component{
                             </div>
                             
                         </div>
-                        <div className="row">
-                            <button className="btn-look-other-art">Lihat Artikel Lainnya</button>
-                        </div>
                     </div> 
-                </div>
                 <style jsx>{
                    `
-                   .btn-look-other-art{
-                       margin-top:70px;
-                       margin-left:auto;
-                       margin-right:auto;
-                       font-family: 'Source Sans Pro', sans-serif;
-                        font-size: 16px;
-                        font-weight: normal;
-                        font-style: normal;
-                        letter-spacing: normal;
-                        color: #a0a4a8;
-                        width:25%;
-                        height:20%;
-                       padding-top:20px;
-                       padding-bottom:20px;
-                       border-radius:8px;
-                       color:#162d4a;
-                       box-shadow: 0 15px 15px 0 rgba(255, 255, 255, 0.16);
-                       background-color: #e8e8e8;
-                   }
                    .label-article-card{
                     font-family: 'Source Sans Pro', sans-serif;
                     font-size: 16px;

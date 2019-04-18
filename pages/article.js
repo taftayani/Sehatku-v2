@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import Head from '../components/Input/Header'
 import Header from '../components/Content/HeaderFirst'
-import First from '../components/Homepage/FirstSection'
 import FirstLayout from '../components/Homepage/FirstLayout'
 import Footer from '../components/Content/FooterFirst'
-import Link from 'next/link'
-class Beranda extends React.Component{
+class article extends React.Component{
     render(){
         return(
             <div>
@@ -15,22 +13,45 @@ class Beranda extends React.Component{
                         <Header/>
                     </div>
                 </div>
-                <First/>
                 <div className="container-fluid first-bg-layout">
-                    <FirstLayout/>
-                    <div className="row">
-                           <Link href="/article">
-                           <button className="btn-look-other-art">Lihat Artikel Lainnya</button>
-                           </Link>
+                    <div className="container layout-input">
+                        <div className="row">
+                            <input type="text" placeholder="Cari Artikel" className="input-seacrh"/>
+                            <button className="btn-search">Cari</button>
+                        </div>
                     </div>
+                    <FirstLayout/>
                 </div>
                 <Footer/>
                 <style jsx global>{
                    `
+                   .layout-input{
+                       padding-top:70px;
+                       padding-bottom:24px;
+                   }
+                   .input-seacrh{
+                       width:90%;
+                       border:none;
+                       background:white;
+                       border-radius:8px;
+                   }
+                   .btn-search{
+                    font-family: 'Source Sans Pro', sans-serif;
+                     font-size: 16px;
+                     font-weight: normal;
+                     font-style: normal;
+                     letter-spacing: normal;
+                     color: white;
+                     width:6%;
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    border-radius:8px;
+                    background-color:#388bf2;
+                   }
                    .first-bg-layout{
                        padding-top: 40px;
                        padding-bottom:100px;
-                       background-color:#F8F8F8;
+                       background-color:#f4f4f5;
                    }
                     .card-article{
                         background-color:#E8E8E8;
@@ -73,25 +94,6 @@ class Beranda extends React.Component{
                         border-radius:8px;
                         width:80%;
                     }
-                    .btn-look-other-art{
-                        margin-top:70px;
-                        margin-left:auto;
-                        margin-right:auto;
-                        font-family: 'Source Sans Pro', sans-serif;
-                         font-size: 16px;
-                         font-weight: normal;
-                         font-style: normal;
-                         letter-spacing: normal;
-                         color: #a0a4a8;
-                         width:25%;
-                         height:20%;
-                        padding-top:20px;
-                        padding-bottom:20px;
-                        border-radius:8px;
-                        color:#162d4a;
-                        box-shadow: 0 15px 15px 0 rgba(255, 255, 255, 0.16);
-                        background-color: #e8e8e8;
-                    }
                    `
                 }
             </style>
@@ -100,4 +102,4 @@ class Beranda extends React.Component{
         )
     }
 }
-export default Beranda;
+export default article;
