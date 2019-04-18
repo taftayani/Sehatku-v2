@@ -75,7 +75,7 @@ export default class FirstSection extends React.Component{
                     }
                     .first-bg{
                         background: white;
-                        padding-top:90px;
+                        padding-top:130px;
                         padding-bottom:70px;
                     }
                     .heading-first{
@@ -93,7 +93,7 @@ export default class FirstSection extends React.Component{
                     }
                     .img-heading-second{
                         background:#A0A4A8;
-                        height:100%;
+                        height:auto;
                         border-radius:8px;
                         width:80%;
                     }

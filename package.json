@@ -6,9 +6,9 @@
     "start": "node index.js"
   },
   "engines": {
-    "node":"8.11.4",
-    "npm":"6.4.1",
-    "yarn":"1.12.3"
+    "node": "8.11.4",
+    "npm": "6.4.1",
+    "yarn": "1.12.3"
   },
   "dependencies": {
     "next": "^8.0.4",
