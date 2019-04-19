@@ -1,135 +1,122 @@
 import React from 'react'
 import Link from 'next/link'
 export default class FirstLayout extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            gambar:'../../static/img/card_img.png',
+            card:''
+        }
+    }
+    // getCard(){
+    //     if(this.props.cards){
+    //         return this.state.card.map(card=>(
+                
+    //     ))
+    //     }
+    // }
     render(){
         return(
             <div>
-                    <div className="container" >
-                        <div className="row">
-                            <label className="label-article">Artikel Terbaru</label>
-                        </div>
-                        <div className="row" style={{borderTop:"1px solid #E0E0E0"}}>
-                           <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                        <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
+                    <div className="row" style={{borderTop:"1px solid #E0E0E0"}}>
+                           <Link href="/lihatArticle">
+                           <div className="col-xl-3" id={this.props.card}>
+                                        <div className="card-article">
+                                            <div className="img-card">
+                                                <img src={this.state.gambar} className="img-card-second"/>
+                                            </div>
+                                            <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
                                         
-                                    </div>
-                                </div>
+                                                <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        
+                                            </div>
+                                            <div className="row rows-lebel">
+                                            
+                                                    <label className="label-article-card">Nama Dokter</label>
+                                                    <label className="label-article-card" style={{marginLeft:"auto"}}>15,Februari 2019</label>
+                                                
+                                            </div>
+                                        </div>
                             </div>
+       
+                           </Link>
 
-                            <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                        <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
+                           <Link href="/lihatArticle">
+                           <div className="col-xl-3" id={this.props.card}>
+                                        <div className="card-article">
+                                            <div className="img-card">
+                                                <img src={this.state.gambar} className="img-card-second"/>
+                                            </div>
+                                            <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
                                         
-                                    </div>
-                                </div>
+                                                <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        
+                                            </div>
+                                            <div className="row rows-lebel">
+                                            
+                                                    <label className="label-article-card">Nama Dokter</label>
+                                                    <label className="label-article-card" style={{marginLeft:"auto"}}>15,Februari 2019</label>
+                                                
+                                            </div>
+                                        </div>
                             </div>
+       
+                           </Link>
 
-                            <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                        <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
+                           <Link href="/lihatArticle">
+                           <div className="col-xl-3" id={this.props.card}>
+                                        <div className="card-article">
+                                            <div className="img-card">
+                                                <img src={this.state.gambar} className="img-card-second"/>
+                                            </div>
+                                            <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
                                         
-                                    </div>
-                                </div>
+                                                <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        
+                                            </div>
+                                            <div className="row rows-lebel">
+                                            
+                                                    <label className="label-article-card">Nama Dokter</label>
+                                                    <label className="label-article-card" style={{marginLeft:"auto"}}>15,Februari 2019</label>
+                                                
+                                            </div>
+                                        </div>
                             </div>
+       
+                           </Link>
 
-                            <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                        <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
+                           <Link href="/lihatArticle">
+                           <div className="col-xl-3" id={this.props.card}>
+                                        <div className="card-article">
+                                            <div className="img-card">
+                                                <img src={this.state.gambar} className="img-card-second"/>
+                                            </div>
+                                            <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
                                         
-                                    </div>
-                                </div>
+                                                <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        
+                                            </div>
+                                            <div className="row rows-lebel">
+                                                    <label className="label-article-card">Nama Dokter</label>
+                                                    <label className="label-article-card" style={{marginLeft:"auto"}}>15,Februari 2019</label>
+                                                
+                                            </div>
+                                        </div>
                             </div>
-
-                            <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                         <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4" id="card-article-loop">
-                                <div className="card-article">
-                                    <div className="img-card">
-                                         <img src="../../static/img/card_img.png" className="img-card-second"/>
-                                    </div>
-                                    <div className="rows-header" style={{paddingLeft:"15px",borderBottom:"1px solid #A0A4A8",paddingTop:"30px"}}>
-                                   
-                                        <p className="paragraph-card">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  
-                                    </div>
-                                    <div className="rows-lebel" style={{paddingLeft:"15px",paddingRight:"15px",paddingTop:"10px"}}>
-                                       
-                                            <label className="label-article-card">Nama Dokter</label>
-                                            <label className="label-article-card" style={{float:"right"}}>15,Februari 2019</label>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+       
+                           </Link>
                             
                         </div>
-                    </div> 
                 <style jsx>{
                    `
+                   .rows-lebel{
+                       padding-top:10px;
+                       padding-left:30px;
+                       padding-right:30px;
+                   }
                    .label-article-card{
                     font-family: 'Source Sans Pro', sans-serif;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: normal;
                     font-style: normal;
                     letter-spacing: normal;
@@ -145,7 +132,7 @@ export default class FirstLayout extends React.Component{
                     letter-spacing: normal;
                     text-align: left;
                     color: #535d65;
-                    height:3rem;
+                    height:4rem;
                    }
                    .img-card-second{
                        width:100%;
@@ -167,10 +154,11 @@ export default class FirstLayout extends React.Component{
                        background-color:white;
                    }
                     .card-article{
-                        background-color:#E8E8E8;
+                        background-color:white;
                         margin-top:20px;
                         border-radius:8px;
-                        padding-bottom:20px;
+                        border:solid 1px #e8e8e8;
+                        padding-bottom:10px;
                     }
                     .card-article:hover{
                         transform:scale(1.04);
@@ -178,7 +166,7 @@ export default class FirstLayout extends React.Component{
                     }
                     .img-card{
                         background-color:#A0A4A8;
-                        height:170px;
+                        height:auto;
                         border-radius:8px;
                     }
                     .navbar-bg{

@@ -6,6 +6,21 @@ import FirstLayout from '../components/Homepage/FirstLayout'
 import Footer from '../components/Content/FooterFirst'
 import Link from 'next/link'
 class Beranda extends React.Component{
+    constructor(props){
+        super();
+        this.state={
+            CardArticle:6
+        }
+       
+    }
+    getCard(){
+        if(this.state.CardArticle){
+            return this.state.CardArticle.map((card)=>
+                <FirstLayout key={card.id}/>
+            )
+        }
+
+    }
     render(){
         return(
             <div>
@@ -17,7 +32,12 @@ class Beranda extends React.Component{
                 </div>
                 <First/>
                 <div className="container-fluid first-bg-layout">
-                    <FirstLayout/>
+                <div className="container" >
+                        <div className="row">
+                            <label className="label-article">Artikel Terbaru</label>
+                        </div>
+                        <FirstLayout card=""/>
+                    </div> 
                     <div className="row">
                            <Link href="/article">
                            <button className="btn-look-other-art">Lihat Artikel Lainnya</button>

@@ -20,7 +20,14 @@ class article extends React.Component{
                             <button className="btn-search">Cari</button>
                         </div>
                     </div>
-                    <FirstLayout/>
+                <div className="container-fluid first-bg-layout">
+                    <div className="container" >
+                            <div className="row">
+                                <label className="label-article">Artikel Terbaru</label>
+                            </div>
+                            <FirstLayout card=""/>
+                        </div> 
+                    </div>
                 </div>
                 <Footer/>
                 <style jsx global>{
